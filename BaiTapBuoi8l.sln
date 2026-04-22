@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapBuoi8l", "BaiTapBuoi8l\BaiTapBuoi8l.csproj", "{77D7A4BC-0111-42E0-AF20-41AEB18E3F6F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77D7A4BC-0111-42E0-AF20-41AEB18E3F6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D7A4BC-0111-42E0-AF20-41AEB18E3F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D7A4BC-0111-42E0-AF20-41AEB18E3F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D7A4BC-0111-42E0-AF20-41AEB18E3F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
