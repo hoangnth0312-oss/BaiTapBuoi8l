@@ -135,32 +135,32 @@
 //Xóa phần tử: Nhập vào một vị trí $k$.
 //Hãy xóa phần tử tại vị trí đó và cập nhật lại mảng
 
-int[] arr ={1,3,2,4,51,6,7,8,9,12};
-
-int n = arr.Length;
-
-Console.Write("Nhap vao vi tri muon xoa trong mang: ");
-int dele = Convert.ToInt32(Console.ReadLine());
-
-if (dele < 0 || dele >= n)
-{
-    Console.WriteLine("Vi tri xoa khong hop le!");
-}
-else
-{
-    for (int i = dele; i < n-1; i++)
-    {
-        arr[i] = arr[i + 1];
-    }
-
-    n--;
-    
-    Console.Write("Mang sau khi xoa: ");
-    for (int i = 0; i < n; i++)
-    {
-        Console.Write(arr[i] + (i == n - 1 ? "" : ", "));
-    }
-}
+// int[] arr ={1,3,2,4,51,6,7,8,9,12};
+//
+// int n = arr.Length;
+//
+// Console.Write("Nhap vao vi tri muon xoa trong mang: ");
+// int dele = Convert.ToInt32(Console.ReadLine());
+//
+// if (dele < 0 || dele >= n)
+// {
+//     Console.WriteLine("Vi tri xoa khong hop le!");
+// }
+// else
+// {
+//     for (int i = dele; i < n-1; i++)
+//     {
+//         arr[i] = arr[i + 1];
+//     }
+//
+//     n--;
+//     
+//     Console.Write("Mang sau khi xoa: ");
+//     for (int i = 0; i < n; i++)
+//     {
+//         Console.Write(arr[i] + " ");
+//     }
+// }
 
 
 
