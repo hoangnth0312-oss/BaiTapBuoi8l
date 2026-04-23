@@ -162,5 +162,41 @@
 //     }
 // }
 
+//Chèn phần tử: Nhập vào giá trị v và vị trí k.
+//Hãy chèn v vào vị trí k trong mảng mà không làm mất các phần tử cũ.
 
+int[] arr ={1,3,2,4,51,6,7,8,9,12};
+int  n = arr.Length;
 
+Console.Write("Nhap so can chen: ");
+int v = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Nhap vao vi tri index: ");
+int k = Convert.ToInt32(Console.ReadLine());
+
+int[] newArr = new int[n + 1];
+// if (k <= 1 || k >= arr.Length - 1)
+// {
+//     Console.WriteLine("Khong chen duoc phan tu vao mang!");
+// }
+
+for (int i = 0; i < newArr.Length; i++)
+{
+    if (i < k)
+    {
+        newArr[i] = arr[i];
+    }
+    else if (i == k)
+    {
+        newArr[i] = v;
+    }
+    else
+    {
+        newArr[i] = arr[i - 1];
+    }
+}
+
+for (int i = 0; i < newArr.Length; i++)
+{
+    Console.Write(newArr[i] + " ");
+}
