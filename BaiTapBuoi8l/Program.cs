@@ -111,23 +111,56 @@
 //Tìm kiếm vị trí: Nhập vào một số $x$. Kiểm tra xem $x$ có tồn tại trong mảng không?
 //Nếu có, hãy chỉ ra tất cả các vị trí (index) của nó.
 
+// int[] arr ={1,3,2,4,51,6,7,8,9,12};
+// Console.WriteLine("Nhap vao mot so trong mang: ");
+// int so =  Convert.ToInt32(Console.ReadLine());
+// bool thoatChuongTrinh = false;
+// for (int i=0;i< arr.Length;i++)
+// {
+//     if (arr[i].Equals(so))
+//     {
+//         Console.WriteLine($"Count {so} nam o vi tri so: " + (i+1));
+//         thoatChuongTrinh  = true;
+//         break;
+//     }
+// }
+//
+// // kiem tra xem chuong trinh co dang tra ve false khong?
+// // dau "!" la phu dinh thoat chuong trinh(thoatChuongTrinh = false;)
+// if (!thoatChuongTrinh)
+// {
+//     Console.WriteLine("Not found " + so + " in the list.");
+// }
+
+//Xóa phần tử: Nhập vào một vị trí $k$.
+//Hãy xóa phần tử tại vị trí đó và cập nhật lại mảng
+
 int[] arr ={1,3,2,4,51,6,7,8,9,12};
-Console.WriteLine("Nhap vao mot so trong mang: ");
-int so =  Convert.ToInt32(Console.ReadLine());
-bool thoatChuongTrinh = false;
-for (int i=0;i< arr.Length;i++)
+
+int n = arr.Length;
+
+Console.Write("Nhap vao vi tri muon xoa trong mang: ");
+int dele = Convert.ToInt32(Console.ReadLine());
+
+if (dele < 0 || dele >= n)
 {
-    if (arr[i].Equals(so))
+    Console.WriteLine("Vi tri xoa khong hop le!");
+}
+else
+{
+    for (int i = dele; i < n-1; i++)
     {
-        Console.WriteLine($"Count {so} nam o vi tri so: " + (i+1));
-        thoatChuongTrinh  = true;
-        break;
+        arr[i] = arr[i + 1];
+    }
+
+    n--;
+    
+    Console.Write("Mang sau khi xoa: ");
+    for (int i = 0; i < n; i++)
+    {
+        Console.Write(arr[i] + (i == n - 1 ? "" : ", "));
     }
 }
 
-// kiem tra xem chuong trinh co dang tra ve false khong?
-// dau "!" la phu dinh thoat chuong trinh(thoatChuongTrinh = false;)
-if (!thoatChuongTrinh)
-{
-    Console.WriteLine("Not found " + so + " in the list.");
-}
+
+
